@@ -29,7 +29,7 @@ The raster reclassification table below maps how physical ground characteristics
 | **2** | **Low** | Elevated/Moderate Slopes | Planted / Cultivated Land | Medium Rainfall Zone |
 | **3** | **Moderate** | Rolling Terrain, Low Basins | Developed / Built-up Areas | Standard Buffer Drainage Density |
 | **4** | **High** | Gentle Slopes, Low Plains | Bare Soil / Exposed Land | High Cumulative Rainfall Intensity |
-| **5** | **Very High** | Depression Basins (Haors) | Open Water Bodies | Immediate Banks / Low Drainage Dens. |
+| **5** | **Very High** | Depression Basins (Haors) | Open Water Bodies | Immediate Banks / Low Drainage Density. |
 
 ---
 
