@@ -6,7 +6,7 @@ A data-driven spatial engineering project utilizing **ArcGIS Pro** and Multi-Cri
 
 ---
 
-## 📊 Analytical Framework & AHP Multi-Criteria Weighting
+##  Analytical Framework & AHP Multi-Criteria Weighting
 To remove subjectivity from the spatial overlay, an Analytical Hierarchy Process (AHP) pair-wise comparison matrix was established. The table below details the target layer allocations, calculated influence percentages, and the underlying engineering justification used in the ArcGIS Pro `Weighted Sum` pipeline.
 
 | Spatial Variable | AHP Weight (%) | Hydraulic Layer Role | Engineering Justification |
@@ -20,7 +20,7 @@ To remove subjectivity from the spatial overlay, an Analytical Hierarchy Process
 
 ---
 
-## 📈 Environmental Sensitivity Matrix
+##  Risk Factor
 The raster reclassification table below maps how physical ground characteristics step-wise translate into localized flood vulnerability indices (Scaled from 1 = Very Low to 5 = Very High) during spatial normalization:
 
 | Index Value | Vulnerability Class | Topographical Profiles | Land Cover Type (LULC) | Hydrological Exposure |
@@ -39,7 +39,7 @@ The raster reclassification table below maps how physical ground characteristics
 Derived from SRTM DEM data to isolate low-lying catchments acting as natural sinks.
 ![Elevation Mapping](Elevation(%20Sylhet%20Division).jpg)
 
-### 2. Slope Geometry
+### 2. Slope Analysis
 Slope gradients calculated in degrees to evaluate surface velocity and velocity retention characteristics.
 ![Slope Analysis](Slope%20Analysis(Sylhet%20Division).jpg)
 
@@ -51,7 +51,7 @@ Derived using D8 flow direction arrays and stream accumulation metrics to quanti
 Supervised classification of Landsat 8 bands to evaluate surface roughness and infiltration/runoff coefficients.
 ![Land Use Land Cover](Land%20Use%20Land%20Cover(%20Sylhet%20Division).jpg)
 
-### 5. Proximity to Fluvial Networks
+### 5. Proximity to River
 Buffer-proximity analytics measuring spatial exposure to the Surma and Kushiyara main river channels.
 ![River Proximity Analysis](River%20Proximity%20Analysis(Sylhet%20Division).jpg)
 
@@ -61,12 +61,12 @@ CHIRPS Gridded Rainfall variations across a 5-year spatial-temporal baseline (20
 
 ---
 
-## 📊 Final Integrated Model
+##  Final Model
 The final integrated model weights and overlays all components to classify regional flood risk into 5 distinct intervals—from Very Low to Very High risk.
 
 ![Flood Risk Assessment](Flood%20Risk%20Assessment(Sylhet%20Division).jpg)
 
-💡 Engineering Takeaway:
+💡Key Insight:
 The model isolates Sunamganj District as a critical high-vulnerability hotspot. This is hydrologically justified by its flat terrain profiles (<2° slopes), low drainage density capacity, and direct exposure to transboundary monsoonal rainfall channels coupled with out-of-bank flow from the Surma and Kushiyara rivers. Conversely, Moulvibazar District demonstrates high systemic resilience due to higher elevation barriers and forest canopies that naturally attenuate peak runoff curves.
 
 
