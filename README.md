@@ -21,20 +21,15 @@ To remove subjectivity from the spatial overlay, an Analytical Hierarchy Process
 ---
 
 ## 📈 Environmental Sensitivity Matrix
-The raster reclassification matrix below maps how physical ground characteristics step-wise translate into localized flood vulnerability indices (Scaled from 1 = Very Low to 5 = Very High):
-[Low Vulnerability]                                                 [High Vulnerability]
-Level 1                Level 2                Level 3                Level 4                Level 5
-│                      │                      │                      │                      │
-├── Forest Canopies    ├── Cultivated Land    ├── Developed Areas    ├── Bare Soils         ├── Open Water Bodies
-├── High Elevation     ├── Moderate Slopes    ├── Low Drainage Dens. ├── Gentle Slopes      ├── Depression Basins (Haors)
-└── Low Rainfall       └── Medium Rainfall    └── Buffer Zones       └── High Rainfall      └── Immediate River Banks
-[Low Vulnerability]                                                 [High Vulnerability]
-Level 1                Level 2                Level 3                Level 4                Level 5
-│                      │                      │                      │                      │
-├── Forest Canopies    ├── Cultivated Land    ├── Developed Areas    ├── Bare Soils         ├── Open Water Bodies
-├── High Elevation     ├── Moderate Slopes    ├── Low Drainage Dens. ├── Gentle Slopes      ├── Depression Basins (Haors)
-└── Low Rainfall       └── Medium Rainfall    └── Buffer Zones       └── High Rainfall      └── Immediate River Banks
+The raster reclassification table below maps how physical ground characteristics step-wise translate into localized flood vulnerability indices (Scaled from 1 = Very Low to 5 = Very High) during spatial normalization:
 
+| Index Value | Vulnerability Class | Topographical Profiles | Land Cover Type (LULC) | Hydrological Exposure |
+| :---: | :--- | :--- | :--- | :--- |
+| **1** | **Very Low** | High Elevation, Steep Slopes | Dense Forest Canopies | Low Precipitation, Far from Rivers |
+| **2** | **Low** | Elevated/Moderate Slopes | Planted / Cultivated Land | Medium Rainfall Zone |
+| **3** | **Moderate** | Rolling Terrain, Low Basins | Developed / Built-up Areas | Standard Buffer Drainage Density |
+| **4** | **High** | Gentle Slopes, Low Plains | Bare Soil / Exposed Land | High Cumulative Rainfall Intensity |
+| **5** | **Very High** | Depression Basins (Haors) | Open Water Bodies | Immediate Banks / Low Drainage Dens. |
 
 ---
 
@@ -86,4 +81,4 @@ The model isolates Sunamganj District as a critical high-vulnerability hotspot. 
 
 ## 📂 Source Data Provenance
 * **Digital Elevation Model & Landsat 8 Data:** [USGS EarthExplorer](https://earthexplorer.usgs.gov/)
-* **Spatio-Temporal Rainfall Data:** [CHIRPS / Climate Hazards Center](https://www.chc.ucsb
+* **Spatio-Temporal Rainfall Data:** [CHIRPS / Climate Hazards Center](https://www.chc.ucsb.edu/data/chirps)
